@@ -1,10 +1,25 @@
+//responsive menu
+
+const mainNavBtn = document.querySelector('.main-nav .icon');
+const mainNav = document.querySelector('.main-nav');
+
+mainNavBtn.addEventListener('click', ev => {
+    if (mainNav.classList.contains('responsive')) {
+        mainNav.classList.remove('responsive')
+    } else {
+        mainNav.classList.add('responsive')
+    }
+});
+
 const accordianBtns = document.querySelectorAll('.accordian');
 const navBtns = document.querySelectorAll('.main-nav a');
 
 navBtns.forEach(navBtn => {
     navBtn.addEventListener('click', ev => {
         ev.preventDefault();
-        let targetElem = ev.target.getAttribute('href');      
+        let targetElem = ev.target.getAttribute('href');
+        console.log(targetElem);
+        if (targetElem === 'icon' || targetElem === null) return;   
         let accordian = document.querySelector(targetElem);
         toggle(ev.target, accordian);
     });
@@ -38,10 +53,11 @@ function toggle(btn, accordian) {
     accordian.nextElementSibling.classList.remove('hidden');
 
     setTimeout(() => {
-        let top = accordian.offsetTop;
+        let top = accordian.offsetTop - (mainNav.offsetHeight + 30);
         window.scroll({
             top: top,
             behaviour: 'smooth'
         });
     },100);
 }
+
