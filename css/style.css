@@ -5,6 +5,7 @@
     --nav-text-colour: #05386B;
     --table-border-colour: rgba(0,0,0,0.2);
 }
+
 * {
     margin: 0;
 }
@@ -120,11 +121,11 @@ section {
 .main-section h3 {
     margin-top: 2.7rem;
     margin-bottom: 2rem;
+    font-size: 1.5rem;
 }
 .main-section h4 {
     font-style: italic;
-    font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .accordian {
@@ -141,8 +142,8 @@ section {
 .hidden {
     display: none;
 }
-.sub-heading {
-    font-weight: bold;
+.inline {
+    display: inline;
 }
 #bigfive {
     border-collapse: collapse;
@@ -181,4 +182,74 @@ footer .container {
 .open {
     color: #000;
     font-weight: 600 !important;
+}
+
+@media print {
+    @page {
+        size: A4;
+        maring: 2.5cm;
+    }
+    
+    @page :header {
+        display: none;
+    }
+    @page :foooter {
+        display: none;
+    }
+    .main-nav, header, footer, #banner {
+        display: none;
+    }
+    body {
+      font-size: 12pt;
+      background-color: #FFF;
+    }
+    .main-section {
+        font: inherit;
+    }
+    .main-section h2 {
+        color: rgb(35, 154, 156) !important;
+        font-weight: 600 !important;
+        font-size: 28pt;
+    }
+    .main-section h3 {
+        font-size: 18pt;
+        font-weight: 400 !important;
+    }
+    .main-section h4 {
+        font-size: 16pt;
+        font-weight: 400 !important;
+    }
+    /*Adjust all header sizes to look better for print using pt units*/
+    h1 {
+        
+    }
+
+    .main-section h2 {
+        page-break-before: always;
+        counter-increment: pages;
+    }
+    .print-footer {
+        display: block;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        text-align: center;
+    }
+    .print-footer::after {      
+        content: 'Page ' counter(pages);
+    }
+    /*
+    .main-section::after {
+        
+        transform: translate(-50%,0);
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin-bottom: 2cm;
+        display: block;
+    }*/
+    .content.hidden {
+        display: block;
+    }
+
 }
