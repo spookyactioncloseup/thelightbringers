@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;700&display=swap");
 :root {
-    --main-bg-colour: #EDf5e1;
-    --banner-bg-colour: #5cdb95;
-    --nav-text-colour: #05386B;
+    --main-bg-colour: #FFF;
+    --banner-bg-colour: #03DA74;
+    --nav-text-colour: #02763F;
     --table-border-colour: rgba(0,0,0,0.2);
 }
 
@@ -75,47 +75,81 @@ section {
     position: fixed;
     width: 100%;
     background-color: var(--banner-bg-colour);
+    z-index: 100;
 }
 .main-nav {
     font-weight: 600;
     font-size: 1rem;
-    padding: 1.2rem 0;
     color: var(--nav-text-colour);
     overflow: hidden;
-    margin: 0 auto;
     position: relative;
-    max-width: 80rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .main-nav a {
     float: left;
     display: block;
-    margin: 0 0.8em;
-    padding: 0.5em;
+    padding: 1.9em 1.4em;
     text-decoration: none;
-    color: inherit
-}
-.main-nav a.active {
     color: var(--main-bg-colour);
-    text-decoration: underline solid 0.2em;
-    text-underline-offset: 0.3em;
+}
+/*
+.main-nav a.active, .main-nav a.active:hover {
+    background-color: rgba(0,0,0,0.46);
+    color: var(--main-bg-colour);
     cursor: default;
+
 }
 .main-nav a:hover {
-    text-decoration: underline solid 0.2em;
-    text-underline-offset: 0.3em;
+    background-color: rgba(0,0,0,0.15)
 }
+*/
+
+.main-nav a.active, .main-nav a.active:hover {
+    cursor: default;
+    color: var(--nav-text-colour);
+}
+.main-nav a.active, .main-nav a:hover  {
+    text-decoration: underline solid 0.2em;
+    text-underline-offset: 0.5em;
+    
+}
+
 .main-nav .icon {
     display: none;
 }
 #banner {
     background-color: var(--banner-bg-colour);
+    /*
+    background-image: url('../images/light.png');
+    background-repeat: no-repeat;
+    background-position: 331px 400px;*/
+    height: 100vh;
 }
-#banner .container >* {
+#banner .container {
     margin: 0 auto;
     text-align: center;
+    height: 100%;
+    position: relative;
+    overflow:hidden;
+}
+#logo-img {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+}
+#light-img{
+    position: absolute;
+    z-index: 1;
+    opacity: 0.8;
+    margin-right: -13%;
+    bottom: -30%;
+    height: 125%;
+    min-width: 450px;
+    min-height: 747px;
+
 }
 .profile_img {
     max-width: 600px;
@@ -186,6 +220,11 @@ footer .container {
     color: #000;
     font-weight: 600 !important;
 }
+.fa {
+    pointer-events: none !important;
+}
+
+
 @media screen and (max-width: 576px) {
     .main-nav {
         position: relative;

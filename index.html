@@ -5,33 +5,37 @@
         <title>Assignment 2 - The Light Bringers</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
     </head>
     <body>
         <header id="nav">
-            <nav class="main-nav">
-                <a href="icon" class="icon"><i class="fa fa-bars fa-2x"></i></a>
-                <a href="#teamprofile" class="active">Team Profile</a>
+            <nav class="main-nav" id="home">
+                <a href="#icon" class="icon"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
+                <a href="#home" class="active"><i class="fa fa-house" ></i></a>
+                <a href="#teamprofile">Team Profile</a>
                 <a href="#idealjobs">Ideal Jobs</a>
                 <a href="#industrydata">Industry Data</a>
                 <a href="#itwork">IT Work</a>
                 <a href="#ittechnologies">IT Technologies</a>
                 <a href="#project">Project Idea</a>
                 <a href="#meetings">Meetings</a>
+                <a href="#references">References</a>
             </nav>
         </header>
         <main id="main-content">
             <section id="banner">
                 <div class="container row-wrap">
-                    <h1><span class="small">The </span>Light Bringers</h1>
+                    <!--<h1><span class="small">The </span>Light Bringers</h1>-->
+                    <img id="light-img" src="images/light.png" alt="light">
+                    <img id="logo-img" src="images/logo.png" height="287" width="810" alt="The Light Bringers Logo">
                 </div>
             </section>
 
             <!--TEAM PROFILE SECTION-->
             <section class="main-section">
                 <div class="container">
-                    <h2 class="section-title accordian open" id="teamprofile">Team Profile</h2>
-                    <div class="content">
+                    <h2 class="section-title accordian" id="teamprofile">Team Profile</h2>
+                    <div class="content hidden">
                         <p><h3 class="inline">Team Name: </h3>The Light Bringers</p>
                         <p><h3>Personal Information: </h3>
                         <h4>Clive</h4>
@@ -123,11 +127,35 @@
             <!--MEETINGS SECTION-->
             <section class="main-section">
                 <div class="container">
+                    <h2 class="section-title accordian" id="reflection">Group Reflection</h2>
+                    <div class="content hidden">
+                        <!--put your content in here between <div> </div> tags-->
+                        
+                        <!--END-->
+                    </div>
+                </div>
+            </section>
+            <!--MEETINGS SECTION-->
+            <section class="main-section">
+                <div class="container">
                     <h2 class="section-title accordian" id="meetings">Meetings</h2>
                     <div class="content hidden">
                         <!--put your content in here between <div> </div> tags-->
                         
                         <!--END-->
+                    </div>
+                </div>
+            </section>
+
+            <!--REFERENCES SECTION-->
+            <section class="main-section">
+                <div class="container">
+                    <h2 class="section-title accordian" id="references">References</h2>
+                    <div class="content hidden">
+                        <ul>
+                        <!--for each refrence use an <li></li> tag-->
+                        <!--END-->
+                        </ul>
                     </div>
                 </div>
             </section>
@@ -138,6 +166,7 @@
                 <span>We hope you enjoyed our assignment.</span>
             </div>
         </footer>
+        <script src="https://kit.fontawesome.com/7b98884a6f.js" crossorigin="anonymous"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
