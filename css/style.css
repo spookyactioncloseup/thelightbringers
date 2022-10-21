@@ -79,13 +79,12 @@ section {
 .main-nav {
     font-weight: 600;
     font-size: 1rem;
-    padding: 2rem 0;
+    padding: 1.2rem 0;
     color: var(--nav-text-colour);
     overflow: hidden;
-    text-transform: uppercase;
     margin: 0 auto;
     position: relative;
-    width: 80rem;
+    max-width: 80rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: right;
@@ -188,7 +187,11 @@ footer .container {
     font-weight: 600 !important;
 }
 @media screen and (max-width: 576px) {
+    .main-nav {
+        position: relative;
+        padding-top: 1.5em;
 
+    }
     .main-nav a {
         display: none;
     }
@@ -201,15 +204,12 @@ footer .container {
     .main-nav.responsive {
         position: relative;
         display: block;
-    }
-    /*
-    .main-nav.responsive a.icon {
         
-    }*/
+    }
     .main-nav.responsive a {
         float: none;
-        display: block;
-        text-align: left;
+        display: flex;
+        flex:100%;
     }
   }
 
