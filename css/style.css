@@ -87,7 +87,7 @@ section {
     max-width: 80rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: right;
+    justify-content: center;
 }
 .main-nav a {
     float: left;
