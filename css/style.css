@@ -50,9 +50,11 @@ h1 {
     line-height: 1;
     margin-bottom: 2rem !important;
 }
+/*
 section {
     padding-top: 3rem;
 }
+*/
 .container {
     max-width: 80.0rem;
     margin: 0 auto;
@@ -131,6 +133,7 @@ section {
 #logo-img {
     position: absolute;
     top: 50%;
+    transform: translate(0,-50%);
     z-index: 2;
 }
 #light-img{
@@ -151,6 +154,7 @@ section {
 }
 .main-section {
     font-size: 1.5rem;
+    margin: 2rem 0;
 }
 
 .main-section h2 {
@@ -168,11 +172,12 @@ section {
     cursor: default;
 }
 .main-section h3 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 300;
 }
 .main-section h4 {
     font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 .main-section p {
     margin-top: 0;
@@ -193,6 +198,10 @@ section {
 }
 .inline {
     display: inline;
+}
+#team {
+    list-style: none;
+    padding: 0;
 }
 #bigfive {
     border-collapse: collapse;
