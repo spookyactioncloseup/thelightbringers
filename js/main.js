@@ -11,6 +11,7 @@ mainNavBtn.addEventListener('click', ev => {
     }
 });
 
+
 const accordianBtns = document.querySelectorAll('.accordian');
 const navBtns = document.querySelectorAll('.main-nav a');
 

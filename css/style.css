@@ -20,9 +20,9 @@ html, body {
 }
 
 body {
-    line-height: 1.5;
+    line-height: 1.9;
     -webkit-font-smoothing: antialiased;
-    font-family: 'Roboto', sans-serif;
+    font-family: roboto, sans-serif;
     background-color: var(--main-bg-colour);
 }
 
@@ -76,36 +76,31 @@ section {
     width: 100%;
     background-color: var(--banner-bg-colour);
     z-index: 100;
+    display: flex;
+    justify-content: center;
+    padding: 0.5em 0;
+    
 }
 .main-nav {
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: var(--nav-text-colour);
     overflow: hidden;
     position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    width: 80em;
 }
 
 .main-nav a {
     float: left;
     display: block;
-    padding: 1.9em 1.4em;
+    padding: 1em 1.3em;
     text-decoration: none;
     color: var(--main-bg-colour);
 }
-/*
-.main-nav a.active, .main-nav a.active:hover {
-    background-color: rgba(0,0,0,0.46);
-    color: var(--main-bg-colour);
-    cursor: default;
-
-}
-.main-nav a:hover {
-    background-color: rgba(0,0,0,0.15)
-}
-*/
 
 .main-nav a.active, .main-nav a.active:hover {
     cursor: default;
@@ -157,22 +152,33 @@ section {
     overflow: hidden;
 }
 .main-section {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
+
 .main-section h2 {
     font-size: 3.5rem;
     font-weight: 300;
+    transition: color 500ms;
+}
+.main-section h2:hover {
+    cursor: pointer;
+    color: #000;
+}
+.main-section h2.open {
+    color: #000;
+    font-weight: 600;
+    cursor: default;
 }
 .main-section h3 {
-    margin-top: 2.7rem;
-    margin-bottom: 2rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    font-weight: 300;
 }
 .main-section h4 {
-    font-style: italic;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
-
+.main-section p {
+    margin-top: 0;
+}
 .accordian {
     cursor: pointer;
 }
@@ -214,11 +220,7 @@ footer .container {
     padding: 1.5rem;
 }
 .section-title {
-    color: #999;
-}
-.open {
-    color: #000;
-    font-weight: 600 !important;
+    color: #BBB;
 }
 .fa {
     pointer-events: none !important;
@@ -229,20 +231,21 @@ footer .container {
     .main-nav {
         position: relative;
         padding-top: 1.5em;
-
     }
     .main-nav a {
         display: none;
     }
-    .main-nav .icon {
+    .main-nav a.icon {
         display: block;
         position: absolute;
-        left: 0;
         top: 0;
+        left: 1.3em;
+        padding: 0;
     }
     .main-nav.responsive {
         position: relative;
         display: block;
+        padding: 0;
         
     }
     .main-nav.responsive a {
@@ -311,7 +314,6 @@ footer .container {
     h1 {
         
     }
-
 
     .main-section::after {
         counter-increment: page;
