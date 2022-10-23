@@ -35,7 +35,7 @@
             <section class="main-section">
                 <div class="container">
                     <h2 class="section-title accordian" id="teamprofile">Team Profile</h2>
-                    <div class="content">
+                    <div class="content hidden">
                         <div>
                             <h3>Team Name:</h3>
                             <p>The Light Bringers</p>
@@ -148,16 +148,131 @@
             <section class="main-section">
                 <div class="container">
                     <h2 class="section-title accordian" id="project">Project Idea</h2>
-                    <div class="content hidden">
-                        <h3>Overview:</h3>
-                        <h3>Motivation:</h3>
-                        <h3>Description:</h3>
-                        <h3>Tools and Technologies:</h3>
-                        <h3>Skills Required:</h3>
-                        <p>The skills will include:</p>
-                        <ul>
-                        </ul>
-                        <h3>Outcome:</h3>
+                    <div class="content">
+                        <div>
+                            <h3>Overview:</h3>
+                            <p>
+                                Illumimate is a mobile application for pedestrians that uses one’s location to find the most well-lit, safest, obstruction free, route to a desired destination.  The application is targeted towards urban and suburban pedestrians; those who don’t feel safe walking at night. The system will use a popular mapping API like Google Maps and combine it with data inputs from the application administrators and trusted end users. The data will come from a number of different sources, including popular paths, number of lights and general illumination in an area, construction work notices, up to date hot maps from tracking users, and direct user inputs. 
+                            </p>
+                        </div>
+                        <div>
+                            <h3>Motivation:</h3>
+                            <p>
+                                The motivation for Illumimate comes from wanting to use readily available technologies to help individuals feel safe and mitigate the potential for an array of crimes that are committed on a number of people every day. If we look at just one alarming crime statistic from the Australian Bureau of Statistics, the number of sexual assaults in 2021 occurring in a non-residential setting, was 10,155. The overall number of sexual assaults increased by 13% from 2020 to 2021 (Australian Bureau of Statistics, 2022). “Research has consistently shown violence and harm in late-night entertainment areas peaks between midnight and 3 am, and occurs most frequently on Friday, Saturday and Sunday nights” Chikritzhs & Stockwell 2002, Chikritzhs et al. 2007; Ireland & Thommeny 1993. In Stephen Tomsen, 2016. There is more than enough technological know-how  and readily available data to try and eliminate some of these statistics and established trends.
+                            </p>
+                        </div>
+                        <div>
+                            <h3>Description:</h3>
+                            <p>
+                                Illumimate is a cross platform mobile application designed to help pedestrians with access to a smart phone find routes for any destination with the most illumination and least impediments. Illumimate will have the following features and concepts:
+                                <ul>
+                                    <li>
+                                        <h4>Primary information submitted by administrators:</h4>
+                                        Illumimate will get its primary information and updates from the application administrators. Users will be able to provide their own updates to this information, albeit with a higher level of scrutiny.
+                                    </li>
+                                    <li>
+                                        <h4>Rate and review route for other users:</h4>
+                                        After a user has reached their destination the app will use the well-established mobile application popup with rate and review. This will ask a user for a review of the route with a breakdown of most important metrics and a rating out of 5 stars. These categories could include: ‘Route as Illuminated as Suggested’, ‘Route as Fast as Suggested’, ‘Was the Route as Described’. Underneath this there could be a textual review giving better insight into any issues that might exist.
+                                    </li>
+                                    <li>
+                                        <h4>Filtering results:</h4>
+                                        Lighting and certain impediments alone are not always a good way to measure safety, with expeditiousness also being extremely important. For this reason, Illumimate will include a set of parameters and their importance to the user. This will be presented as a range of horizontal slide toggles from not important to very important. This will be established when setting up one’s profile. Users will be able to change their defaults at any time in their profile settings. When a user enters their destination, it will rank each route against these and sort them from best match to worst, in a descending order. The user will be able to use dynamic override filters from the route suggestion search screen. Finally, the user will be given quick/popular options like ‘Most Illuminated Route’, ‘Fastest Route’, ‘Most Liked Route’, etc.
+                                    </li>
+                                    <li>
+                                        <h4>Push location to chosen contacts:</h4>
+                                        <ul>
+                                            <li>
+                                                Once a user has selected their route, Illumimate will offer the users the ability to share their live location, with short interval polling, to any number of their phone or social media contacts. The tracking will show a user’s personalized avatar on a map,  also give the time started and an estimated time of arrival at destination.
+                                            </li>
+                                            <li>
+                                                Users will be able to configure an SOS with emergency contacts. If the user goes off track or stops for too long, they will be given a notification to update the situation. This could be simply ‘Done’ and ‘Pause’. This will need a simple security check to prevent impersonation. If the user does not respond after a certain period of time, set in the user’s profile settings, the application will send out an SOS to emergency contacts.
+                                            </li>
+                                            <li>
+                                                The user can notify local law enforcement (Police) of their location and current situation. This can also private security which patrol business as a security service and have an obligation to assist.
+                                            </li>
+                                            <li>
+                                                Any local law enforcement offices within a close proximity to the route will be highlighted to the user.
+                                            </li>
+                                            <li>
+                                                The user can see which venues are open being usually restaurants, clubs, convenience stores or other safe harbour venues which may assist. Restaurants and clubs have private security (bouncers) which have an obligation to look after patrons. It is acceptable for a person to walk into a venue looking for assistance and the venue would have an obligation to assist. 
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4>Live update from location:</h4>
+                                        <ul>
+                                            <li>
+                                                Users will be able to report issues with existing infrastructure. This will present your live location on the map and the street light locations. Here the user will tap on any light that has an issue. 
+                                            </li>
+                                            <li>
+                                                For missing lights and features users will be able to use a drag and drop library of elements to add permanent features to the map, pending approval.  This information can also be supplied to councils and responsible municipal bodies for their own records and potential confirmation of suggestion.
+                                            </li>
+                                            <li>
+                                                Add dynamic temporary items or situations:
+                                                Users will also be able to add dynamic temporary items from the library such as roadworks or an unsafe situation. The user will have the option to add an expected duration for the temporary item, otherwise a default time period will be built into each item.
+                                            </li>
+                                            <li>
+                                                Users can include a textual message from their current location for all other users to see.
+                                            </li>
+                                            <li>
+                                                Users will be given the option to create an incident report if anything criminal took place on their route and the approximate location. This will likely need a ranking system for type of incident so that it can be algorithmically weighted for future route suggestions.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4>User scrutiny / trust:</h4>
+                                        <ul>
+                                            <li>Users will need to provide proof of their identity using a two-factor authentication.</li>
+                                            <li>Users will get tiered and promoted for their interactions and helpfulness. Using terms of high value such as ‘The Owl’, ‘The Defender’, ‘The Chosen One’, etc.</li>
+                                        </ul>
+                                    </li>
+                                    <li><h4>Analysis of metrics:</h4>
+                                        Illumimate will keep an anonymous record of each user’s choices and routes. This will allow the platform to provide better understanding of what users want for their routes. This will also allow for dynamic determination that something is wrong with a route due to decrease in popularity for a portion thereof. This will also be used to use user tiers to rank any data they have provided.
+                                    </li>
+                                </ul>
+                                <div>
+                                    <h3>Tools and Technologies:</h3>
+                                    <ul>
+                                        <li>Map API like Google Map Platform.</li>
+                                        <li>iOS and Android dev tools to access security features (including biometrics), GPS, etc.</li>
+                                        <li>Access to local road and transport information. This could come from council/municipality and or regional/state government.</li>
+                                        <li>Cloud server hosting like Azure or Amazon AWS.</li>
+                                        <li>Cross platform application library, potentially web technologies based like React Native or Ionic.</li>
+                                        <li>2FA API like Authy to confirm users’ identity for allowing route information sharing by users.</li>
+                                        <li>Social media API’s to access extra ‘non-phone’ contacts.</li>
+                                        <li>Web stack technologies:
+                                            <ul>
+                                                <li>Frontend: html, css, javascript. This can include any popular technologies that transpile to these languages including Sass for CSS and Typescript for JavaScript. </li>
+                                                <li>Backend: Node JS. For consistency between frontend and backend development and the consequent simplicity it is beneficial to use Node JS on the backend. Node JS is also very mature and has much better IO throughput than PHP and Python with better asynchronous capability.</li>
+                                            </ul>
+                                        </li>
+                                        <li>Non-relational, highly scalable, open-source database like Mongo DB. This will allow users to submit varying amounts of information and leave unknown details empty.</li>
+                                        <li>Restful API for transacting data between developers, users, and the server.</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3>Skills Required:</h3>
+                                    <p>The skills required for the development of Illuminate are as follow:</p>
+                                    <ul>
+                                        <li>Understanding of cloud server deployment.</li>
+                                        <li>Database schema design.</li>
+                                        <li>Backend Node JS development.</li>
+                                        <li>Ability to research and organize legitimate data sources, such as council and state government.</li>
+                                        <li>Understanding of data analysis and transformation, especially in the context of a medium throughput/transaction non-relational database.</li>
+                                        <li>Ability to work with web stack technologies, including html, css, javascript, nodeJS, and databases.</li>
+                                        <li>Ability to work with a cross platform JavaScript library such as React Native to build a cross platform app for both iOS and Android.</li>
+                                        <li>Development of REST API for data requests and submissions.</li>
+                                        <li>Ability to work with and integrate third party API’s such as Google Maps Platform, Authy for 2FA, and social media like Facebook for ‘non phone’ contacts.</li>
+                                        <li>Good understanding of UI and UIX to make sure the Illumimate is easy to use, helpful, and intuitive. Good UI and UIX implementation are extremely important to making sure all intended features are integrated in a way that promotes their utilization – the app works the way it was supposed to.</li>
+                                    </ul>
+                                    <p>The skills listed above are ubiquitous in the IT industry.  Any areas that are weak within our group would be easily found, making development from a skills perspective highly feasible.</p>
+                                </div>
+                                <div>
+                                    <h3>Outcome:</h3>
+                                    <p>Illumimate will have the potential to improve the confidence of individuals who want or need to walk late at night but are otherwise unsure of the safety in doing so. This could help users save some money from not having to use public transport, taxis, and ride share platforms. The platform could potentially reduce crime stats. If the application gained in popularity, would-be perpetrators would likely become aware of the application’s existence and be less likely to engage in criminal activity towards potential victims.  This could really bolster the night-time economy of urban areas by providing a reduced sense of anxiety related to overall safety. Finally, as a side effect of information gathering by platform administrators and users, this could be shared with the appropriate governing bodies to improve related public utilities.  This could include the improvement of infrastructure reporting for public guidance materials, more timely maintenance of public lighting, improved amount of public lighting in high traffic areas, and notification of unknown impediments.</p>
+                                </div>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>
