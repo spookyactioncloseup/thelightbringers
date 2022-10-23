@@ -43,13 +43,6 @@ p, pre, ul {
     margin: 1em 0;
 }
 
-h1 {
-    font-weight: 200;
-    font-size: 8em;
-    color: var(--main-bg-colour);
-    line-height: 1;
-    margin-bottom: 2rem !important;
-}
 /*
 section {
     padding-top: 3rem;
@@ -320,7 +313,7 @@ table.team-jobs th, table.job-info th, table.meetings th {
     }
     .main-section {
         font: inherit;
-        height: 100%;
+        /*height: 100%;*/
         position: relative;
     }
 
@@ -340,9 +333,11 @@ table.team-jobs th, table.job-info th, table.meetings th {
     }
     /*Adjust all header sizes to look better for print using pt units*/
     h1 {
-        
+        font-weight: 200;
+        font-size: 60pt;
+        margin: 1rem 0;
     }
-
+    /*
     .main-section::after {
         counter-increment: page;
         content:"Page " counter(page);
@@ -350,10 +345,11 @@ table.team-jobs th, table.job-info th, table.meetings th {
         left: 50%;
         white-space: nowrap; 
         z-index: 20;
-        bottom: 0;
+        bottom: 0.5cm;
         position: absolute;
     }
-    .content.hidden {
+    */
+    .hidden {
         display: block;
     }
 
