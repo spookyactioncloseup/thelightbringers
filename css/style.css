@@ -238,19 +238,19 @@ table caption {
     margin-bottom: 1.3em;
     font-weight: 600;
 }
-table.team-jobs, table.job-info {
+table.team-jobs, table.job-info, table.meetings {
     width: 100%;
     border-collapse: collapse;
     margin: 2rem 0;
     table-layout: fixed;
 }
-table.team-jobs th, table.team-jobs td, table.job-info th, table.job-info td {
+table.team-jobs th, table.team-jobs td, table.job-info th, table.job-info td, table.meetings th, table.meetings td {
     vertical-align: middle;
     padding: 1.7em 0;
     text-align: center;
     border: 1px solid #DDD;
 }
-table.team-jobs th, table.job-info th {
+table.team-jobs th, table.job-info th, table.meetings th {
     background: #444;
     font-size: 1.2em;
     color: #FFF;
