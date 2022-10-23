@@ -237,10 +237,11 @@ table caption {
     font-size: 1.5em;
     margin-bottom: 1.3em;
 }
-table.team-jobs {
+table.team-jobs, table.job-info {
     width: 100%;
     border-collapse: collapse;
     margin: 2rem 0;
+    table-layout: fixed;
 }
 table.team-jobs th, table.team-jobs td, table.job-info th, table.job-info td {
     vertical-align: middle;
@@ -252,12 +253,6 @@ table.team-jobs th, table.job-info th {
     background:#444;
     color: #FFF;
     font-size: 1.2em;
-}
-table.job-info {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 2rem 0;
-    table-layout: fixed;
 }
 @media screen and (max-width: 576px) {
     .main-nav {
