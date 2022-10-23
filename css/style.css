@@ -95,9 +95,10 @@ section {
 }
 
 .main-nav a {
+
     float: left;
     display: block;
-    padding: 1em 1.3em;
+    padding: 1em 1.1em;
     text-decoration: none;
     color: var(--main-bg-colour);
 }
