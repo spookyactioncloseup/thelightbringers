@@ -233,8 +233,32 @@ footer .container {
 .fa {
     pointer-events: none !important;
 }
-
-
+table caption {
+    font-size: 1.5em;
+    margin-bottom: 1.3em;
+}
+table.team-jobs {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+}
+table.team-jobs th, table.team-jobs td, table.job-info th, table.job-info td {
+    vertical-align: middle;
+    padding: 1.7em 0;
+    text-align: center;
+    border: 1px solid #DDD;
+}
+table.team-jobs th, table.job-info th {
+    background:#444;
+    color: #FFF;
+    font-size: 1.2em;
+}
+table.job-info {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    table-layout: fixed;
+}
 @media screen and (max-width: 576px) {
     .main-nav {
         position: relative;
