@@ -251,9 +251,9 @@ table.team-jobs th, table.team-jobs td, table.job-info th, table.job-info td {
     border: 1px solid #DDD;
 }
 table.team-jobs th, table.job-info th {
-    background:#444;
-    color: #FFF;
+    background: #444;
     font-size: 1.2em;
+    color: #FFF;
 }
 @media screen and (max-width: 576px) {
     .main-nav {
